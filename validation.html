@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Assignment 1 </title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"> </script>
+<script src="validation.js"> </script>
+<link rel="stylesheet" type="text/css" href="validation.css">
+</head>
+
+<body>
+<form id="form">
+	<label> <b> Name </b> </label>  <br/> 
+	<input type="text" name="name" placeholder="First" class="no-special-characters" title="no special characters are allowed" required/> <input type="text" name="name1" class="no-special-characters" placeholder="Last" title="no special characters are allowed" required  />
+	<p id="nameWarning" style="display:none; font-size:16px; color:red;"> Please enter first name and last name</p> <br/>
+	
+	<label> <b>Choose your username </b></label> <br/>
+	<input type="text" name="username" class="validate-email" placeholder="@gmail.com" style="text-align:right; width:318px;" />
+	<p id="usernameWarning" style="display:none; font-size:16px; color:red;"> Please enter valid username</p> <br/>
+	
+	<label> <b>Create a password </b></label> <br/>
+	<input type="password" name="password" style="width:318px;" class="passward-check" title="Password should least one upper case letter, one lower case letter, one special c and one digit"/>
+	<p id="passwordWarning" style="display:none; font-size:16px; color:red;"> Please enter valid password</p> <br/>
+	
+	<label> <b>Confirm your password </b></label><br/>
+	<input type="password" name="password1" style="width:318px;" /> 
+	<p id="password1Warning" style="display:none; font-size:16px; color:red;"> password doesn't match</p> <br/>
+	
+	<label> <b>Birthday </label> </b><br/>
+	<select style="background-color:#f3f3f3;" class="required" id="month"> 
+		<option disabled selected > Month </option>
+		<option> January</option>
+		<option> February</option>
+		<option> March</option>
+		<option> April</option>
+		<option> May</option>
+		<option> June</option>
+		<option> July</option>
+		<option> August</option>
+		<option> September</option>
+		<option> October</option>
+		<option> November</option>
+		<option> December</option>
+	</select>
+	<input type="text" placeholder="Day" style="width:110px;" name="day" /> <input type="text" placeholder="Year" style="width:110px;" name="year"/> 
+	<p id="monthWarning" style="display:none; font-size:16px; color:red;"> please select a month</p> 
+	<p id="dayWarning" style="display:none; font-size:16px; color:red;"> please select valid date</p> 
+	<p id="yearWarning" style="display:none; font-size:16px; color:red;"> Age is required above 18.</p>	
+	<br/>
+	
+	<label> <b>Gender </b></label>  <br/>
+	<select name="gender" style="width:318px; background-color:#f3f3f3;"> 
+		<option disabled selected > I am.. </option>
+		<option> Female</option>
+		<option> Male</option>
+		<option> Other</option>
+		<option> Rather not to say</option>
+	</select> 
+	<br/> <br/>
+
+	<label> <b>Mobile Phone </label> </b>  <br/>
+	<input type="text" style="width:318px;" name="mobile" title="enter 10 digit number"/ > <br/>
+	<p id="mobileWarning" style="display:none; font-size:16px; color:red;"> Please enter valid number.</p><br/>
+	
+	<label> <b>Your current email address </b> </label> <br/>
+	<input type="text" style="width:318px;" name="email"/> <br/>
+	<p id="emailWarning" style="display:none; font-size:16px; color:red;"> Please enter valid email address.</p><br/>
+	
+	<label> <b>Location </label>  <br/>
+	<select style="width:318px; background-color:#f3f3f3;">
+		<option disabled selected >Country </option>
+		<option> United States</option> <hr/>
+		<option> India</option>
+		<option> Canada</option>
+		<option> Australia</option>
+		<option> England</option>
+		<option> Spain</option>
+		<option> France</option>
+		<option> Finland</option>
+		<option> Mexico</option>
+		<option> brazil</option>
+		<option> Italy</option>
+		<option> Portugal</option>
+	</select> 
+	<br/> <br/>
+	<input type="submit" value="Next Step" id="buttonstyle" /> <br/>
+	<br/>
+	<br/>
+
+</form>
+<div>
+<a href="https://support.google.com/accounts/answer/1733224?hl=en">  Learn more </a> 
+<p style="font:12px; color:gray">  about why we ask this information  </p>
+</div>
+<script src="jquery-ui/external/jquery/jquery.js"></script>
+<script src="jquery-ui/jquery-ui.min.js"></script>
+
+</body>
+
+
+</html>
